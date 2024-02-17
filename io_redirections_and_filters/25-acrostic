@@ -1,3 +1,2 @@
 #!/bin/bash
-filename=$1; message=""; while read line; do message+="${line:0:1}"; done < "$filename"; echo "$message"; echo
-
+cut -c1 - | paste -sd ""
